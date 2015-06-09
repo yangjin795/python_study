@@ -7,6 +7,7 @@ parser.add_option('-f','--filename',dest='filename',help='filename name')
 
 (options,args)=parser.parse_args()
 print options
+print options.filename
 print args
 
 ########## runing result
@@ -24,6 +25,8 @@ Options:
 """
 $ python optparse_test.py -v -f filename1 argsssss
 {'verbose': True, 'filename': 'filename1'}
+filename1
 ['argsssss']
+
 
 """
